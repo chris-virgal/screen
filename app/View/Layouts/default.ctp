@@ -40,9 +40,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <body>
 	<div id="header">
 		<div class="headContent">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+			<h1>FLATScreen</h1>
 		</div>
-		</div>
+		</div><br class="clear">
 	<div id="container">
 		<div class="headerNav">
 			<ul>

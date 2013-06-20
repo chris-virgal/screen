@@ -16,6 +16,13 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 1
 	.headContent{
 		width: 1210px;
 		margin: auto;
+		h1{
+			font-size: 30px;
+			background-color: #ffde00;
+			padding: 20px;
+			color: #fff;
+			float: left;
+		}
 	}
 }
 
@@ -40,7 +47,7 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 1
 				width: 320px;
 				float: right;
 				text-align: right;
-				border-right: 3px solid #fbe709;
+				border-right: 3px solid #ffde00;
 				a{
 				font-size: 20px;
 				color: #fff;
