@@ -60,15 +60,17 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<br class="clear">
-		<div id="footer">
+		
+	</div>
+	<div id="footer">
+			<div class="footContent">
 			<?php echo $this->Html->link(
 					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
 					'http://www.cakephp.org/',
 					array('target' => '_blank', 'escape' => false)
 				);
 			?>
+			</div>
 		</div>
-	</div>
-	<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>
