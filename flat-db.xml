@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 3.5.7
+- http://www.phpmyadmin.net
+-
+- Client: localhost
+- Généré le: Ven 21 Juin 2013 à 16:48
+- Version du serveur: 5.5.29
+- Version de PHP: 5.4.10
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="flat" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="articles">
+                CREATE TABLE `articles` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `title` varchar(50) NOT NULL,
+                  `desc` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+                  `created` datetime NOT NULL,
+                  `modified` datetime NOT NULL,
+                  `image` blob NOT NULL,
+                  `image2` blob NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Base de données: 'flat'
+    -->
+    <database name="flat">
+        <!-- Table articles -->
+        <table name="articles">
+            <column name="id">1</column>
+            <column name="title">test</column>
+            <column name="desc">dfsdfsdf</column>
+            <column name="created">2013-06-11 00:00:00</column>
+            <column name="modified">0000-00-00 00:00:00</column>
+            <column name="image"></column>
+            <column name="image2"></column>
+        </table>
+        <table name="articles">
+            <column name="id">2</column>
+            <column name="title">magic</column>
+            <column name="desc">Un ancien parent de la famille de Sookie et Jason refait surface. Eric essaye tant bien que mal de contrecarrer les plans de Burrel. Sookie fera la rencontre d’un beau jeune homme qui s’avère posséder les mêmes pouvoirs qu’elle. Sam est déconcerté par l’attitude trop optimiste de Nicole. Il sera aussi confronté à l’avenir de la petite Emma avec Alcide et Martha. Pendant ce temps, Bill contemple l’étendue de ses nouveaux pouvoirs.</column>
+            <column name="created">2013-06-19 00:00:00</column>
+            <column name="modified">0000-00-00 00:00:00</column>
+            <column name="image"></column>
+            <column name="image2"></column>
+        </table>
+        <table name="articles">
+            <column name="id">3</column>
+            <column name="title">lorem</column>
+            <column name="desc">Vivamus ac quam eu felis consectetur euismod. Vestibulum sodales enim justo, et vehicula dui sagittis in. Fusce eu dignissim nibh. Donec ut placerat urna. Cras semper, risus sed pretium iaculis, diam orci dignissim lacus, vitae rutrum odio est at purus. Suspendisse potenti. Quisque mi erat, rutrum a nulla vitae, rhoncus cursus justo. Duis eu lectus imperdiet, cursus purus eu, commodo libero. Sed vehicula felis imperdiet, malesuada nisi id, dignissim tellus.</column>
+            <column name="created">2013-06-20 00:00:00</column>
+            <column name="modified">2013-06-20 00:00:00</column>
+            <column name="image"></column>
+            <column name="image2"></column>
+        </table>
+        <table name="articles">
+            <column name="id">4</column>
+            <column name="title">ips</column>
+            <column name="desc">Vivamus ac quam eu felis consectetur euismod. Vestibulum sodales enim justo, et vehicula dui sagittis in. Fusce eu dignissim nibh. Donec ut placerat urna. Cras semper, risus sed pretium iaculis, diam orci dignissim lacus, vitae rutrum odio est at purus. Suspendisse potenti. Quisque mi erat, rutrum a nulla vitae, rhoncus cursus justo. Duis eu lectus imperdiet, cursus purus eu, commodo libero. Sed vehicula felis imperdiet, malesuada nisi id, dignissim tellus.</column>
+            <column name="created">2013-06-20 00:00:00</column>
+            <column name="modified">2013-06-20 00:00:00</column>
+            <column name="image"></column>
+            <column name="image2"></column>
+        </table>
+    </database>
+</pma_xml_export>
