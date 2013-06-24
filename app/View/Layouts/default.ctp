@@ -39,25 +39,38 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 </head>
 <body>
 	<div id="header">
+		<div class="nav">
+		<ul>
+				<li>Twitter</li>
+				<li>Facebook</li>
+				<li>Vine</li>
+			</ul><br class="clear">	
+		</div>
 		<div class="headContent">
-			<h1>FLATScreen</h1>
+			<div class="flatNav">
+			<h1>FlatScreen</h1>
+			<div class="headerNav">
+			<form>	
+			<input type="text" value="" class="search">
+			<input type="submit" value="ok" class="submitSearch">
+		</div>
+			</div><br class="clear">	
 		</div>
 		</div><br class="clear">
 	<div id="container">
-		<div class="headerNav">
-			<ul>
-				<li>TEST de TEST</li>
-				<li>TEST de TEST</li>
-				<li>TEST de TEST</li>
-				<li>TEST de TEST</li>
-				<li>TEST de TEST</li>
-			</ul>	
-		</div>
+		
 		<div id="content">
 
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
+		</div>
+		<div class="context">
+			<div>
+			<?php echo 	
+			$this->Html->image('right_promo.jpg', array('alt' => 'promo', 'border' => '0'))	
+			?>
+			</div>
 		</div>
 		<br class="clear">
 		
@@ -70,6 +83,11 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 					array('target' => '_blank', 'escape' => false)
 				);
 			?>
+			</div>
+			<div class="subFooter">
+				<div class="subContent">
+
+				</div>
 			</div>
 		</div>
 </body>
