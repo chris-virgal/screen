@@ -12,9 +12,9 @@
 body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 13px;}
 .clear{clear: both;line-height: 2px;}
 #header{
-	background-color:#323232;
+	background-color:#333333;
 	.nav{
-		width: 1210px;
+		width: 940px;
 		margin: auto;
 		ul{
 			float: right;
@@ -26,10 +26,12 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 1
 			}
 		}
 	}
+}
+.subHeader{	
 	.headContent{
 		margin: auto;
-		background-color: #ffde00;
-			@include box-shadow(rgba(#000, 0.3) 0 0 25px);
+		
+			
 			padding: 10px 0 20px 0;
 			.headerNav{
 				float: left;
@@ -57,7 +59,7 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 1
 				}
 			}
 		.flatNav{
-			width: 1210px;
+			width: 940px;
 			margin: auto;
 			padding: 20px 0;
 			h1{
@@ -73,11 +75,11 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 1
 }
 
 #container{
-	width: 1170px;margin: auto;
+	width: 940px;margin: auto;
 	padding: 0 20px;
 	#content{
 		float: left;
-		width: 820px;
+		width: 595px;
 		padding-right: 40px;
 	}
 	.context{
@@ -86,23 +88,22 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 1
 	}
 	.articleContent{
 		div{
-			padding:0 0 30px 0;
+			padding:0 0 15px 0;
 			margin-top: 50px;
 			border-bottom: 1px solid #eeeeee;
 			h2{
-				background-color:#323232;
+				
 				font-size: 20px;
-				color: #fff;
+				color: #000;
 				font-weight: bold;
-				padding: 7px 20px 7px 5px;
+				padding: 0px 20px 7px 5px;
 				overflow: hidden;
-				width: 320px;
-				float: right;
-				text-align: right;
-				border-right: 3px solid #ffde00;
+				width: 180px;
+				text-align: left;
+				
 				a{
 				font-size: 20px;
-				color: #fff;
+				color: #000;
 				text-transform: uppercase;
 				text-decoration: none;
 
@@ -110,10 +111,28 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 1
 
 			}
 			p{
-				padding: 20px 0 0 0;
+				padding: 10px 0 0 0px;
+				text-align: justify;
+    			
+    			font-size: 0.9em;
+
+
 			}
+			.createSpan{
+    				font-size: 0.8em;
+    				color: #676767;
+    				padding: 0px 0 10px 0px;
+    		}
+    		.contArticle{
+    			float: left;
+    			padding: 0px 0 0px 30px;
+    			width: 385px;
+    			margin: 0px;
+    			border: none;
+    		}
 			
 		}
+		.illus{float: left;width: 180px;margin-top: 0px;border: none;}
 
 	}
 
@@ -122,14 +141,14 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 1
 #footer{
 	background-color: #ffde00;
 	.footContent{
-		width: 1210px;
+		width: 940px;
 		margin: auto;
 		height: 150px;
 	}
 	.subFooter{
 		background-color:#323232;
 		.subContent{
-		width: 1210px;
+		width: 940px;
 		margin: auto;
 		height: 300px;
 		}

@@ -46,17 +46,21 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 				<li>Vine</li>
 			</ul><br class="clear">	
 		</div>
+	</div>
+	<div class="subHeader">	
 		<div class="headContent">
 			<div class="flatNav">
-			<h1>FlatScreen</h1>
-			<div class="headerNav">
-			<form>	
-			<input type="text" value="" class="search">
-			<input type="submit" value="ok" class="submitSearch">
-		</div>
+				<h1>FlatScreen</h1>
+				<div class="headerNav">
+					<form>	
+					<input type="text" value="" class="search">
+					<input type="submit" value="ok" class="submitSearch">
+					</form>
+				</div>
 			</div><br class="clear">	
 		</div>
-		</div><br class="clear">
+	</div>	
+	<br class="clear">
 	<div id="container">
 		
 		<div id="content">
