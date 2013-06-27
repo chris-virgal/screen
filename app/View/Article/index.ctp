@@ -2,9 +2,7 @@
 $this->Html->css('screen', null, array('inline' => false));
 ?>
 
-<?php foreach ($mea as $m): ?>
-<img src="<?php echo $m['Mea']['image']; ?>">
-<?php endforeach; ?>
+
     <!-- Here is where we loop through our $posts array, printing out post info -->
 <div class="articleContent">
     <?php foreach ($articles as $ar): ?>

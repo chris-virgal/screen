@@ -6,8 +6,63 @@
 @import "compass/reset";
 @import "compass/css3/box-shadow";
 @import url(http://fonts.googleapis.com/css?family=Orienta);
-@import url(http://fonts.googleapis.com/css?family=Vampiro+One);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import "compass/css3/border-radius";
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+
 
 body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 13px;}
 .clear{clear: both;line-height: 2px;}
@@ -16,6 +71,12 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 1
 	.nav{
 		width: 940px;
 		margin: auto;
+		h1{
+			font-family: 'Open Sans', sans-serif;
+			font-size: 20px;
+			color: #fff;
+			float: left;
+			}
 		ul{
 			float: right;
 			li{
@@ -40,7 +101,7 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 1
 					width: 240px;
 					height: 30px;
 					@include border-radius(4px 0px 0px 4px);
-					border: 2px solid #e7c901;
+					border: 1px solid #EEEEEE;
 					background-color: #f3f3f3;
 					border-right: none;
 					display: inline-block;
@@ -48,8 +109,8 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 1
 				}
 				.submitSearch{
 					display: inline-block;
-					border: 2px solid #e7c901;
-					color: #ffde00;
+					border: 1px solid #EEEEEE;
+					color: #fff;
 					background-color: #323232;
 					 float: left;
 					 border-left: none;
@@ -62,18 +123,16 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 1
 			width: 940px;
 			margin: auto;
 			padding: 20px 0;
-			h1{
-			font-family: 'Vampiro One', cursive;
-			font-size: 30px;
-			color: #323232;
-			float: left;
-			border-bottom: 6px solid #000;
-			}
+			
 		}
 		
 	}
 }
-
+.highlight{
+		
+		margin-bottom: 20px;
+		height: 450px;
+	}
 #container{
 	width: 940px;margin: auto;
 	padding: 0 20px;
@@ -86,6 +145,7 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 1
 		float: right;
 		padding-top: 20px;
 	}
+	
 	.articleContent{
 		div{
 			padding:0 0 15px 0;

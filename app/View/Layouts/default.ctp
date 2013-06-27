@@ -31,15 +31,16 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<?php
 		echo $this->Html->meta('icon');
 		echo $this->Html->css('screen');
-
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+
 </head>
 <body>
 	<div id="header">
 		<div class="nav">
+			<h1>FlatScreen</h1>
 		<ul>
 				<li>Twitter</li>
 				<li>Facebook</li>
@@ -50,7 +51,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<div class="subHeader">	
 		<div class="headContent">
 			<div class="flatNav">
-				<h1>FlatScreen</h1>
+				
 				<div class="headerNav">
 					<form>	
 					<input type="text" value="" class="search">
@@ -61,8 +62,10 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		</div>
 	</div>	
 	<br class="clear">
+	<div class="highlight">
+
+		</div>
 	<div id="container">
-		
 		<div id="content">
 
 			<?php echo $this->Session->flash(); ?>
@@ -95,4 +98,11 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			</div>
 		</div>
 </body>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<?php echo $this->Html->script('backstretch.min');?>
+	<script>
+	$(document).ready(function(){
+	$(".highlight").backstretch(["http://www.lintegrateur-web.fr/screen/got.jpg","http://www.lintegrateur-web.fr/screen/Arrow.jpg"], {fade: 500});
+	})
+	</script>
 </html>
