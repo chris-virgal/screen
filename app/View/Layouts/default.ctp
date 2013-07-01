@@ -75,9 +75,22 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<div class="context">
 			<div>
 			<?php echo 	
-			$this->Html->image('right_promo.jpg', array('alt' => 'promo', 'border' => '0'))	
+			$this->Html->image('right_promo.jpg', array('alt' => 'promo', 'border' => '0','height' => '350','width' => '300'))	
 			?>
 			</div>
+			<div class="topBox">
+    <h2>Le top 10 Revue</h2>
+    <div class="Box">
+	        <ol>
+	        	 <li><a href="#">test</a></li>
+	        	 <li><a href="#">test</a></li>
+	        	 <li><a href="#">test</a></li>
+	        	 <li><a href="#">test</a></li>
+	        	 <li><a href="#">test</a></li>
+	        </ol>
+    </div>
+
+    </div>
 		</div>
 		<br class="clear">
 		

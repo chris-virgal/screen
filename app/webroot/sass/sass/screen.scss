@@ -9,62 +9,11 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import "compass/css3/border-radius";
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-/* Styles */
-}
-/* Smartphones (landscape) ----------- */
-@media only screen
-and (min-width : 321px) {
-/* Styles */
-}
-/* Smartphones (portrait) ----------- */
-@media only screen
-and (max-width : 320px) {
-/* Styles */
-}
-/* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-/* Styles */
-}
-/* iPads (landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
-/* Styles */
-}
-/* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-/* Styles */
-}
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 1224px) {
-/* Styles */
-}
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {
-/* Styles */
-}
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
-}
 
 
 
-body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 13px;}
+
+body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: .9em;}
 .clear{clear: both;line-height: 2px;}
 #header{
 	background-color:#333333;
@@ -144,6 +93,34 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 1
 	.context{
 		float: right;
 		padding-top: 20px;
+
+		.topBox{
+			 background-color: #333333;
+			 padding: 20px;
+			 margin-top: 20px;
+			 h2{
+			 	color: #fff;
+			 	text-transform: uppercase;
+			 	font-size: 1.4em;
+			 	padding-bottom: 15px;
+			 }
+			 .Box{
+			 	color: #333333;
+			 	background-color:#fff;
+			 	ol{
+			 		padding-top: 20px;
+			 		li{
+			 			list-style-type: decimal;
+			 			color: #333333;
+			 			padding: 0 0 15px 15px;
+			 			a{
+			 				color: #333333;
+			 				text-decoration: none;
+			 			}
+			 		}
+			 	}
+			 }
+		}
 	}
 	
 	.articleContent{
@@ -213,4 +190,91 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: 1
 		height: 300px;
 		}
 	}
+}
+
+
+@media screen and (max-width: 600px) { 
+	body{font-size: .8em;}
+	#header{	
+	.nav{
+			width: 100%;
+			margin: auto;
+			height: auto;
+			display: block;  
+			h1{
+				font-family: 'Open Sans', sans-serif;
+				font-size: 1.2em!important;
+				float: none!important;
+				padding-left: 8px;
+				}
+			ul{
+				float: none!important;
+				li{
+					float: none;
+					color: #fff;
+					padding: 8px;
+					margin-right: 8px;
+					font-size: .8em!important;
+				}
+			}
+		}
+	}.subHeader{	
+	.headContent{
+		margin: auto;
+			padding: 10px 0 20px 0;
+			.headerNav{
+				float: none;
+				 padding-left: 10px;
+				.search{
+					width: 60%;
+				}
+				.submitSearch{
+					 height: 36px;
+					  width: 45px;
+				}
+			}
+		.flatNav{
+			width: 100%;
+			margin: auto;
+			padding: 20px 0;
+			
+		}
+		
+	}
+}
+	.highlight{
+		
+	display: none;
+	}
+	#container{
+	width: 100%;
+	margin: auto;
+	padding: 0px;
+	#content{
+		float: none;
+		width: 100%;
+		padding-right: 0px;
+	}
+}
+	.context{
+		display: none;
+		padding-top: 20px;
+	}
+	#footer{
+	background-color: #ffde00;
+	.footContent{
+		width: 100%;
+		margin: auto;
+		height: auto;
+	}
+	.subFooter{
+		background-color:#323232;
+		.subContent{
+		width: 100%;
+		margin: auto;
+		height: auto;
+		}
+	}
+}
+	
 }
