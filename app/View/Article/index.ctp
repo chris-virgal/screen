@@ -6,7 +6,7 @@ $this->Html->css('screen', null, array('inline' => false));
     <!-- Here is where we loop through our $posts array, printing out post info -->
 <div class="articleContent">
     <?php foreach ($articles as $ar): ?>
-    <div>
+    <div class="art">
         <br class="clear">
         <div class="illus"><img src="<?php echo $ar['Article']['image2']; ?>"></div>
         <div class="contArticle">

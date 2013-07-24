@@ -40,7 +40,6 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <body>
 	<div id="header">
 		<div class="nav">
-			<h1>FlatScreen</h1>
 		<ul>
 				<li>Twitter</li>
 				<li>Facebook</li>
@@ -51,7 +50,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<div class="subHeader">	
 		<div class="headContent">
 			<div class="flatNav">
-				
+				<h1>FlatScreen</h1>
 				<div class="headerNav">
 					<form>	
 					<input type="text" value="" class="search">
@@ -62,10 +61,18 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		</div>
 	</div>	
 	<br class="clear">
-	<div class="highlight">
-
-		</div>
+	
 	<div id="container">
+		<div class="navMain">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Test</a></li>
+			<li><a href="#">Test</a></li>
+			<li><a href="#">Test</a></li>
+			<li><a href="#">Test</a></li>
+		</ul>
+			
+	</div>
 		<div id="content">
 
 			<?php echo $this->Session->flash(); ?>

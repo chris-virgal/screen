@@ -5,7 +5,7 @@
 
 @import "compass/reset";
 @import "compass/css3/box-shadow";
-@import url(http://fonts.googleapis.com/css?family=Orienta);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import "compass/css3/border-radius";
 
@@ -13,12 +13,34 @@
 
 
 
-body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: .9em;}
+body{font-family: 'Oswald', sans-serif;color: #323232;margin: auto;font-size: .9em;}
 .clear{clear: both;line-height: 2px;}
+.navMain{
+	background-color: #333333;
+	padding: 0px 10px;
+	  overflow: hidden;
+	  border-bottom: 2px solid #FF7113;
+	ul{
+		li{
+			float: left;
+			display: block;
+			  border-right: 1px solid #3D3E3E;
+			a{
+				color: #fff;
+				font-weight: normal;
+				font-size: 18px;
+				padding: 15px 30px;
+				display: block;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
 #header{
 	background-color:#333333;
 	.nav{
-		width: 940px;
+		width: 1040px;
 		margin: auto;
 		h1{
 			font-family: 'Open Sans', sans-serif;
@@ -40,21 +62,20 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: .
 .subHeader{	
 	.headContent{
 		margin: auto;
-		
-			
 			padding: 10px 0 20px 0;
 			.headerNav{
-				float: left;
-				 padding-left: 150px;
+				float: right;
+				 padding-left: 0px;
 				.search{
 					width: 240px;
-					height: 30px;
+					height: 29px;
 					@include border-radius(4px 0px 0px 4px);
 					border: 1px solid #EEEEEE;
 					background-color: #f3f3f3;
 					border-right: none;
 					display: inline-block;
 					float: left;
+					margin-top: 1px;
 				}
 				.submitSearch{
 					display: inline-block;
@@ -63,19 +84,28 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: .
 					background-color: #323232;
 					 float: left;
 					 border-left: none;
-					 height: 36px;
+					 height: 35px;
 					 @include border-radius(0px 4px 4px 0px);
 					  width: 45px;
 				}
 			}
 		.flatNav{
-			width: 940px;
+			width: 1040px;
 			margin: auto;
 			padding: 20px 0;
+			h1{
+				font-family: 'Open Sans', sans-serif;
+				font-size: 35px;
+    			text-transform: uppercase;
+    			float: left;
+			}
 			
 		}
 		
 	}
+}
+.subHeader{
+	padding-bottom: 30px;
 }
 .highlight{
 		
@@ -83,11 +113,11 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: .
 		height: 450px;
 	}
 #container{
-	width: 940px;margin: auto;
+	width: 1040px;margin: auto;
 	padding: 0 20px;
 	#content{
 		float: left;
-		width: 595px;
+		 width: 640px;
 		padding-right: 40px;
 	}
 	.context{
@@ -95,24 +125,26 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: .
 		padding-top: 20px;
 
 		.topBox{
-			 background-color: #333333;
-			 padding: 20px;
+			  padding: 20px 0 0;
 			 margin-top: 20px;
 			 h2{
-			 	color: #fff;
+			 	color: #333333;
 			 	text-transform: uppercase;
-			 	font-size: 1.4em;
+			 	font-size: 1.3em;
 			 	padding-bottom: 15px;
+			 	border-bottom: 4px solid #FF7113;
 			 }
 			 .Box{
 			 	color: #333333;
 			 	background-color:#fff;
 			 	ol{
 			 		padding-top: 20px;
+			 		padding: 20px 30px 0 0px;
 			 		li{
 			 			list-style-type: decimal;
 			 			color: #333333;
-			 			padding: 0 0 15px 15px;
+			 			padding: 0 0 15px 5px;
+			 			border-bottom: 1px dotted #FF7113;
 			 			a{
 			 				color: #333333;
 			 				text-decoration: none;
@@ -124,6 +156,11 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: .
 	}
 	
 	.articleContent{
+		.art{
+			width: 310px;
+			float: left;
+			 height: 310px;
+		}
 		div{
 			padding:0 0 15px 0;
 			margin-top: 50px;
@@ -161,26 +198,28 @@ body{font-family: 'Orienta', sans-serif;color: #323232;margin: auto;font-size: .
     				padding: 0px 0 10px 0px;
     		}
     		.contArticle{
-    			float: left;
-    			padding: 0px 0 0px 30px;
-    			width: 385px;
+    			padding: 0px 0 0px 0px;
+    			width: 285px;
     			margin: 0px;
     			border: none;
+    			height: 106px;
+    			overflow: hidden;
+    			line-height: 16px;
     		}
 			
 		}
-		.illus{float: left;width: 180px;margin-top: 0px;border: none;}
+		.illus{width: 180px;margin-top: 0px;border: none;}
 
 	}
 
 }
 
 #footer{
-	background-color: #ffde00;
+	background-color: #FF7113;
 	.footContent{
-		width: 940px;
-		margin: auto;
-		height: 150px;
+		height: 5px;
+	    margin: auto;
+	    width: 1040px;
 	}
 	.subFooter{
 		background-color:#323232;
