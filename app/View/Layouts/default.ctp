@@ -50,7 +50,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<div class="subHeader">	
 		<div class="headContent">
 			<div class="flatNav">
-				<h1>FlatScreen</h1>
+				<h1>FlatScreen <span>Tv Screen addict</span></h1>
 				<div class="headerNav">
 					<form>	
 					<input type="text" value="" class="search">
@@ -66,10 +66,10 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<div class="navMain">
 		<ul>
 			<li><a href="#">Home</a></li>
-			<li><a href="#">Test</a></li>
-			<li><a href="#">Test</a></li>
-			<li><a href="#">Test</a></li>
-			<li><a href="#">Test</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Cinéma</a></li>
+			<li><a href="#">Séries</a></li>
+			<li><a href="#">Forum</a></li>
 		</ul>
 			
 	</div>
@@ -104,12 +104,32 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	</div>
 	<div id="footer">
 			<div class="footContent">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
+			<div class="rSocial">
+				<h2>FlatScreen<br> <span>Tv Screen addict</span></h2>
+				<p>Flatscreen est le site référence des TV shows, celui des accros de la tv, des séries d'hier, d'aujourd'hui et de demain...
+					Alors venez partager vos coups de coeur télévisuelle avec nous.</p>
+			</div>
+			<div class="listTop">
+
+    <dl>
+    <dt>Séries du moment</dt>
+    <dd><a href="#">Plus belle la vie</a></dd>
+    <dd><a href="#">Dr. House</a></dd>
+    <dd><a href="#">Mentalist</a></dd>
+    <dd><a href="#">Gossip Girl</a></dd>
+    <dd><a href="#">Glee</a></dd>
+    <dd><a href="#">Dexter</a></dd>
+    <dd><a href="#">Desperate Housewives</a></dd>
+</dl>
+ <dl>
+    <dt>Acteur du moment</dt>
+    <dd><a href="#">Ryan gosling</a></dd>
+    <dd><a href="#">Russel crowe</a></dd>
+    <dd><a href="#">Christian Bale</a></dd>
+    <dd><a href="#">Idriss Alba</a></dd>
+</dl>
+
+			</div>
 			</div>
 			<div class="subFooter">
 				<div class="subContent">

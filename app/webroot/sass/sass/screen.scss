@@ -101,6 +101,10 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
     			font-family: 'Oswald', sans-serif;
     			 border-left: 2px solid #FF7113;
     			 padding-left: 5px;
+    			 span{
+    			 	font-size: 12px;
+    			 	color: #bcbcbc;
+    			 }
 			}
 			
 		}
@@ -218,11 +222,66 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 }
 
 #footer{
-	background-color: #FF7113;
+	border-top:5px solid #FF7113;
+	background-color: #3a3a3a;
 	.footContent{
-		height: 5px;
 	    margin: auto;
 	    width: 1040px;
+	    overflow: hidden;
+	    padding-top: 15px;
+	    .rSocial{
+			 float: left;
+			  width: 320px;
+			  padding: 15px 0;
+			  h2{
+			  	font-size: 45px;
+			  	color: #FF7113;
+			  	font-weight: bold;
+			  	text-transform: uppercase;
+			  	font-family: 'Oswald', sans-serif;
+			  	line-height: 16px;
+			  	span{
+			  		font-size: 15px;
+			  		color: #fff;
+			  		font-weight: normal;
+			  	}
+			  }
+			  p{
+			  	font-size: 12px;
+			  	color: #eaeaea;
+			  	padding-top: 10px;
+			  	width: 80%;
+			  	line-height: 16px;
+			  }
+		}
+		.listTop{
+			float: left;
+			dl{
+				float: left;
+				width: 160px;
+				margin-right: 30px;
+				dt{
+				font-family: 'Oswald', sans-serif;
+				font-size: 14px;
+				color: #fff;
+				padding-bottom: 5px;	
+				border-bottom:1px solid #FF7113;
+				margin-bottom: 5px;
+				}
+				dd{
+					padding-bottom: 6px;
+					a{
+						color: #eaeaea;
+						font-size: 12px;
+						text-decoration: none;
+						&:hover{
+							border-left: 2px solid #FF7113;
+							padding-left: 10px;
+						}
+					}
+				}
+			}
+		}
 	}
 	.subFooter{
 		background-color:#323232;
@@ -235,6 +294,7 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 }
 
 
+/*mobile*/
 @media screen and (max-width: 600px) { 
 	body{font-size: .8em;}
 	#header{	
