@@ -177,10 +177,11 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 				font-size: 20px;
 				color: #000;
 				font-weight: bold;
-				padding: 0px 20px 7px 5px;
+				padding: 0px 20px 7px 0px;
 				overflow: hidden;
 				width: 180px;
 				text-align: left;
+				border-bottom: 1px solid #FF7113;
 				
 				a{
 				font-size: 20px;
@@ -207,6 +208,61 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
     		.contArticle{
     			padding: 0px 0 0px 0px;
     			width: 285px;
+    			margin: 0px;
+    			border: none;
+    			height: 106px;
+    			overflow: hidden;
+    			line-height: 16px;
+    		}
+			
+		}
+		.illus{width: 180px;margin-top: 0px;border: none;}
+
+	}
+	.meaContent{
+		.art{
+			width: 640px;
+			float: left;
+		}
+		div{
+			padding:0 0 15px 0;
+			margin-top: 10px;
+			border-bottom: 1px solid #eeeeee;
+			h2{
+				
+				font-size: 30px;
+				color: #000;
+				font-weight: bold;
+				padding: 5px 20px 7px 5px;
+				overflow: hidden;
+				text-align: left;
+				border-left: 2px solid #FF7113;
+				
+				a{
+				font-size: 30px;
+				color: #000;
+				text-transform: uppercase;
+				text-decoration: none;
+
+				}
+
+			}
+			p{
+				padding: 10px 0 0 0px;
+				text-align: justify;
+    			
+    			font-size: 0.9em;
+
+
+			}
+			.createSpan{
+    				font-size: 0.8em;
+    				color: #676767;
+    				padding: 0px 0 10px 0px;
+    		}
+    		.contArticle{
+    			padding: 0px 0 0px 0px;
+    			width: 100%;
     			margin: 0px;
     			border: none;
     			height: 106px;
