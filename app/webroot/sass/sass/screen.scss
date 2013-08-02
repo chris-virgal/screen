@@ -9,6 +9,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import "compass/css3/border-radius";
 
+$g_color:#b21004;
 
 
 
@@ -19,7 +20,7 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 	background-color: #333333;
 	padding: 0px 10px;
 	  overflow: hidden;
-	  border-bottom: 2px solid #FF7113;
+	  border-bottom: 2px solid $g_color;
 	ul{
 		li{
 			float: left;
@@ -29,7 +30,7 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 				color: #fff;
 				font-weight: normal;
 				font-size: 18px;
-				padding: 15px 30px;
+				padding: 8px 30px;
 				display: block;
 				text-decoration: none;
 				text-transform: uppercase;
@@ -95,14 +96,19 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 			margin: auto;
 			padding: 20px 0;
 			h1{
-				font-size: 35px;
+				 font-size: 45px;
+			    font-weight: bold;
+			    line-height: 16px;
     			text-transform: uppercase;
     			float: left;
     			font-family: 'Oswald', sans-serif;
-    			 border-left: 2px solid #FF7113;
-    			 padding-left: 5px;
+    			 border-left: 3px solid $g_color;
+    			 padding-left: 8px;
+    			 color: $g_color;
+    			 height: 46px;
+    			 padding-top: 10px;
     			 span{
-    			 	font-size: 12px;
+    			 	font-size: 15px;
     			 	color: #bcbcbc;
     			 }
 			}
@@ -111,9 +117,7 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 		
 	}
 }
-.subHeader{
-	padding-bottom: 30px;
-}
+
 .highlight{
 		
 		margin-bottom: 20px;
@@ -124,8 +128,8 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 	padding: 0 20px;
 	#content{
 		float: left;
-		 width: 640px;
-		padding-right: 40px;
+		 width: 690px;
+		padding-right: 20px;
 	}
 	.context{
 		float: right;
@@ -139,7 +143,7 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 			 	text-transform: uppercase;
 			 	font-size: 1.1em;
 			 	padding-bottom: 15px;
-			 	border-bottom: 4px solid #FF7113;
+			 	border-bottom: 4px solid $g_color;
 			 }
 			 .Box{
 			 	color: #333333;
@@ -151,7 +155,7 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 			 			list-style-type: decimal;
 			 			color: #333333;
 			 			padding: 0 0 15px 5px;
-			 			border-bottom: 1px dotted #FF7113;
+			 			border-bottom: 1px dotted $g_color;
 			 			a{
 			 				color: #333333;
 			 				text-decoration: none;
@@ -163,15 +167,23 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 	}
 	
 	.articleContent{
+		h2{
+			font-size: 25px;
+			
+		}
 		.art{
-			width: 310px;
+			width: 315px;
 			float: left;
-			 height: 310px;
+			border-bottom: 1px solid #eeeeee;
+			  margin-bottom: 20px;
+    		padding-bottom: 30px;
+		}
+		.last{
+			margin-left: 50px;
 		}
 		div{
 			padding:0 0 15px 0;
-			margin-top: 50px;
-			border-bottom: 1px solid #eeeeee;
+			
 			h2{
 				
 				font-size: 20px;
@@ -181,7 +193,6 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 				overflow: hidden;
 				width: 180px;
 				text-align: left;
-				border-bottom: 1px solid #FF7113;
 				
 				a{
 				font-size: 20px;
@@ -210,19 +221,31 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
     			width: 285px;
     			margin: 0px;
     			border: none;
-    			height: 106px;
     			overflow: hidden;
     			line-height: 16px;
+    				.follow{
+    					color: #fff;
+    					font-size: 13px;
+    					text-decoration: none;
+    					background-color: $g_color;
+    				padding: 5px 15px;
+    				float: left;
+    				margin-top: 15px;
+    				&:hover{
+    						background-color: #333333;
+    					}
+    			}
     		}
 			
 		}
-		.illus{width: 180px;margin-top: 0px;border: none;}
+		.illus{margin-top: 0px;border: none;}
 
 	}
 	.meaContent{
 		.art{
-			width: 640px;
+			width: 690px;
 			float: left;
+			border: none;
 		}
 		div{
 			padding:0 0 15px 0;
@@ -233,10 +256,10 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 				font-size: 30px;
 				color: #000;
 				font-weight: bold;
-				padding: 5px 20px 7px 5px;
+				padding: 2px 20px 7px 5px;
 				overflow: hidden;
 				text-align: left;
-				border-left: 2px solid #FF7113;
+				border-left: 2px solid $g_color;
 				
 				a{
 				font-size: 30px;
@@ -265,9 +288,20 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
     			width: 100%;
     			margin: 0px;
     			border: none;
-    			height: 106px;
     			overflow: hidden;
     			line-height: 16px;
+    			.follow{
+    					background-color: $g_color;
+    				padding: 5px 15px;
+    				float: left;
+    				margin-top: 15px;
+    					color: #fff;
+    					font-size: 13px;
+    					text-decoration: none;
+    					&:hover{
+    						background-color: #333333;
+    					}
+    			}
     		}
 			
 		}
@@ -278,7 +312,7 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 }
 
 #footer{
-	border-top:5px solid #FF7113;
+	border-top:5px solid $g_color;
 	background-color: #3a3a3a;
 	.footContent{
 	    margin: auto;
@@ -291,7 +325,7 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 			  padding: 15px 0;
 			  h2{
 			  	font-size: 45px;
-			  	color: #FF7113;
+			  	color: $g_color;
 			  	font-weight: bold;
 			  	text-transform: uppercase;
 			  	font-family: 'Oswald', sans-serif;
@@ -321,7 +355,7 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 				font-size: 14px;
 				color: #fff;
 				padding-bottom: 5px;	
-				border-bottom:1px solid #FF7113;
+				border-bottom:1px solid $g_color;
 				margin-bottom: 5px;
 				}
 				dd{
@@ -331,7 +365,7 @@ body{font-family: 'Open Sans', sans-serif;color: #323232;margin: auto;font-size:
 						font-size: 12px;
 						text-decoration: none;
 						&:hover{
-							border-left: 2px solid #FF7113;
+							border-left: 2px solid $g_color;
 							padding-left: 10px;
 						}
 					}
